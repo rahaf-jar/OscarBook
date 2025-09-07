@@ -1,20 +1,49 @@
+.card {
+  min-height: 450px;
+  background-color: white;
+  width: 400px;
+  border: 1px solid hsla(0, 0%, 0%, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
 
-.card{
-    min-height: 450px;
-    background-color: white;
-    width: 400px;
-    border: 1px solid hsla(0, 0%, 0%, 0.3);
-    border-radius: 4px;
-    overflow: hidden;
-
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 }
 
-p{
-    font-family: 'Arial', sans-serif;
+.info-like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+
+  p {
+    font-family: "Arial", sans-serif;
     text-align: center;
     color: hsl(0, 0%, 36%);
     font-size: 18px;
+  }
+
+  .heart-btn {
+    input {
+      display: none;
+    }
+
+    span {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-image: url("/assets/img/empty-heart.png");
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    span:hover{
+        transform: scale(1.1);
+    }
+
+    input:checked + span {
+      background-image: url("/assets/img/full-heart.png");
+    }
+  }
 }
