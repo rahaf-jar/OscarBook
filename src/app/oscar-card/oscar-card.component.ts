@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-oscar-card',
@@ -9,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './oscar-card.component.scss'
 })
 export class OscarCardComponent {
+  @Input() text: string = '';
+  @Input() img: string = '';
 
 }
