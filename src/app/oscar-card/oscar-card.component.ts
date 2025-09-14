@@ -6,8 +6,9 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './oscar-card.component.html',
-  styleUrl: './oscar-card.component.scss'
+  styleUrls: ['./oscar-card.component.scss']
 })
+
 export class OscarCardComponent {
   @Input() text: string = '';
   @Input() img: string = '';

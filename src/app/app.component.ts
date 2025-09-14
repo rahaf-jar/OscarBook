@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { OscarCardComponent } from './oscar-card/oscar-card.component';
+import { ProposalsComponent } from './proposals/proposals.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { OscarCardComponent } from './oscar-card/oscar-card.component';
     CommonModule,
     RouterOutlet,
     HeaderComponent,
-    OscarCardComponent 
+    OscarCardComponent,
+    ProposalsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

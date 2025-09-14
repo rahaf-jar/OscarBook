@@ -1,10 +1,15 @@
 <app-header></app-header>
 
-<div class="container">
-  <app-oscar-card 
-  *ngFor="let i of [0, 1, 2, 3 ,4 ,5 ,6 ,7 ,8 ,9 ,10, 11, 12]" 
-  [img]="PostsImgs[i]" 
-  [text]="PostsTexts[i]"></app-oscar-card>
+<div class="flexrow">
+  <div class="container">
+    <app-oscar-card
+      *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]"
+      [img]="PostsImgs[i]"
+      [text]="PostsTexts[i]"
+    ></app-oscar-card>
+  </div>
+
+  <app-proposals></app-proposals>
 </div>
 
 <router-outlet></router-outlet>
