@@ -10,18 +10,33 @@
     margin-right: 16px;
     object-fit: cover;
   }
+
+  .name {
+    width: 140px;
+  }
+
+  a {
+    font-size: 14px;
+    color: hsl(209, 87%, 54%);
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
-.profile-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    b{
-        font-size: 18px; 
-    }
-    .description{
-        font-size: 14px;
-        color: hsl(0, 0%, 50%);
-    }
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  b {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 14px;
+    color: hsl(0, 0%, 50%);
+  }
 }

@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { OscarCardComponent } from './oscar-card/oscar-card.component';
 import { ProposalsComponent } from './proposals/proposals.component';
+import { FriendBoxComponent } from "./friend-box/friend-box.component";
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { ProposalsComponent } from './proposals/proposals.component';
     HeaderComponent,
     OscarCardComponent,
     ProposalsComponent,
+    FriendBoxComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
